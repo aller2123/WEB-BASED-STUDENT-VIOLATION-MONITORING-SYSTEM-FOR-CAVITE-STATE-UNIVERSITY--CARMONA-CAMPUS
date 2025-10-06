@@ -1,0 +1,172 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+}
+
+#wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+#sidebar {
+  background-color: #1A4D2E;
+  color: #d8f0c6;
+  width: 200px;
+  padding: 20px 0;
+  min-height: 100vh; /* Set minimum height to full viewport height */
+}
+
+#sidebar .logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  background-color: #1A4D2E; /* Set default background color for links */
+}
+
+nav ul li.active a,
+nav ul li a:hover {
+  background-color: #1abc9c;
+}
+
+#main-content {
+  flex: 1;
+  padding: 20px;
+  min-height: 0; /* Reset min-height to allow content to expand */
+  overflow-y: auto; /* Add vertical scroll if content overflows */
+}
+
+#main-content header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+#main-content header input[type="search"] {
+  width: 60%;
+  padding: 10px;
+}
+
+#main-content .user {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#content-area {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  height: 150px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+
+
+/* Students section styles */
+#students-section {
+    margin-top: 20px;
+}
+
+#students-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.filters {
+    margin-bottom: 15px;
+}
+
+.filters select {
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f9f9f9;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.pagination a.active {
+    background-color: #1abc9c;
+    color: white;
+    border-color: #1abc9c;
+}
+
+/* Add custom styles for the active link */
+.nav-link.active {
+  background-color: #337ab7;
+  color: #fff;
+  border-radius: none;
+}
+/* .menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+} */
+
+/* .menu-text {
+  font-size: 1.5rem;
+  margin-left: 10px;
+} */
+
+.user {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: -100px; /* Adjust this value to move the username to the left */
+}
+/* @media (max-width: 768px) {
+  .user-container {
+      margin-right: 0;
+      margin-top: 0;
+      text-align: center;
+      flex: 1;
+  }
+} */
+ .form-control{
+  border-radius:5px 0 0 5px;
+ }

@@ -1,0 +1,206 @@
+body {
+    background: #ffffff;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    color: #303030;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    background-color: #ffffff; /* Set default background color for links */
+  }
+  
+  nav ul li.active a,
+  nav ul li a:hover {
+    background-color: #1abc9c;
+  }
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.nav-link.active {
+    background-color: #699669;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-weight:500;
+  }
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    margin-top: 64px;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: gray;
+    color: #303030;
+    transition: all 0.3s;
+    background-color: #ffffff; /* Set default background color for links */
+    border-right: 1px solid transparent; /* Necessary for border-image to work */
+    border-image: linear-gradient(to bottom, rgba(100, 146, 47, 0.1), #64922f, rgba(100, 146, 47, 0.1)) 1 100%;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 11px 20px 10px 20px;
+    background: white;
+}
+
+/* #sidebar ul.components {
+    border-bottom: 1px solid #47748b;
+} */
+
+#sidebar ul p {
+    color: #fff;
+    padding: 0px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: white;
+    background: #547854;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: white;
+    background: #649164;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: gray;
+}
+
+.menu-text {
+   color:#303030;
+   font-size: 24px;
+   font-weight: bold;
+   position: relative;
+   top: 10px;
+   left:5px;
+}
+
+
+.menu-btn {
+  background: rgb(128, 128, 128);
+    margin-top: 10px;
+    color: gray;
+    background-color: rgba(207, 236, 212, 0); /* Set default background color for links */
+
+}   
+
+.menu-header {
+    width:100%;
+    height:64px;
+    background: #eeeeee;
+    background-color: #ffffff; /* Set default background color for links */
+
+}
+
+
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#content.active {
+    width: 100%;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+   
+}

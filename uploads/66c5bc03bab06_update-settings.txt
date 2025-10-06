@@ -1,0 +1,230 @@
+<!-- System Description -->
+            <div class="card mb-4">
+                <div class="card-header" data-toggle="collapse" data-target="#systemDescriptionCollapse" aria-expanded="true" aria-controls="systemDescriptionCollapse">
+                    <div class="settings-header">System Description</div>
+                </div>
+                <div id="systemDescriptionCollapse" class="collapse">
+                    <div class="card-body">
+                        <form id="systemDescriptionForm" action="update_system_description.php" method="post">
+                            <div class="form-group">
+                                <textarea class="form-control" id="systemDescription" name="system_description" rows="3"><?php echo htmlspecialchars($systemDescription); ?></textarea>
+                            </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-outline-success">Save Changes</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision Statement -->
+            <div class="card mb-4">
+                <div class="card-header" data-toggle="collapse" data-target="#visionStatementCollapse" aria-expanded="true" aria-controls="visionStatementCollapse">
+                    <div class="settings-header">Vision Statement</div>
+                </div>
+                <div id="visionStatementCollapse" class="collapse">
+                    <div class="card-body">
+                        <form id="visionStatementForm" action="update_vision_statement.php" method="post">
+                            <div class="form-group">
+                                <textarea class="form-control" id="visionStatement" name="vision_statement" rows="3"><?php echo htmlspecialchars($visionStatement); ?></textarea>
+                            </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-outline-success">Save Changes</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission Statement -->
+            <div class="card mb-4">
+                <div class="card-header" data-toggle="collapse" data-target="#missionStatementCollapse" aria-expanded="true" aria-controls="missionStatementCollapse">
+                    <div class="settings-header">Mission Statement</div>
+                </div>
+                <div id="missionStatementCollapse" class="collapse">
+                    <div class="card-body">
+                        <form id="missionStatementForm" action="update_mission_statement.php" method="post">
+                            <div class="form-group">
+                                <textarea class="form-control" id="missionStatement" name="mission_statement" rows="3"><?php echo htmlspecialchars($missionStatement); ?></textarea>
+                            </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-outline-success">Save Changes</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quality Policy -->
+            <div class="card mb-4">
+                <div class="card-header" data-toggle="collapse" data-target="#qualityPolicyCollapse" aria-expanded="true" aria-controls="qualityPolicyCollapse">
+                    <div class="settings-header">Quality Policy</div>
+                </div>
+                <div id="qualityPolicyCollapse" class="collapse">
+                    <div class="card-body">
+                        <form id="qualityPolicyForm" action="update_quality_policy.php" method="post">
+                            <div class="form-group">
+                                <textarea class="form-control" id="qualityPolicy" name="quality_policy" rows="3"><?php echo htmlspecialchars($qualityPolicy); ?></textarea>
+                            </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-outline-success">Save Changes</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header" data-toggle="collapse" data-target="#servicesParaghCollapse" aria-expanded="true" aria-controls="qualityPolicyCollapse">
+                    <div class="settings-header">Services</div>
+                </div>
+                <div id="servicesParaghCollapse" class="collapse">
+                    <div class="card-body">
+                        <form id="servicesParagraphForm" action="update_setting.php" method="post">
+                            <div class="form-group">
+                                <textarea class="form-control" id="services_paragraph" name="setting_value" rows="5"><?php echo htmlspecialchars($servicesParagraph); ?></textarea>
+                                <input type="hidden" name="setting_key" value="services_paragraph">
+                            </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-outline-success">Save Changes</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header" data-toggle="collapse" data-target="#careerServCollapse" aria-expanded="true" aria-controls="qualityPolicyCollapse">
+                    <div class="settings-header">Career Services</div>
+                </div>
+                <div id="careerServCollapse" class="collapse">
+                    <div class="card-body">
+                        <form id="careerServicesParagraphForm" action="update_setting.php" method="post">
+                            <div class="form-group">
+                                <textarea class="form-control" id="career_services_paragraph" name="setting_value" rows="5"><?php echo htmlspecialchars($careerServicesParagraph); ?></textarea>
+                                <input type="hidden" name="setting_key" value="career_services_paragraph">
+                            </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-outline-success">Save Changes</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header" data-toggle="collapse" data-target="#jobFairCollapse" aria-expanded="true" aria-controls="qualityPolicyCollapse">
+                    <div class="settings-header">Job Fair</div>
+                </div>
+                <div id="jobFairCollapse" class="collapse">
+                    <div class="card-body">
+                        <form id="jobFairParagraphForm" action="update_setting.php" method="post">
+                            <div class="form-group">
+                                <textarea class="form-control" id="job_fair_paragraph" name="setting_value" rows="5"><?php echo htmlspecialchars($jobFairParagraph); ?></textarea>
+                                <input type="hidden" name="setting_key" value="job_fair_paragraph">
+                            </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-outline-success">Save Changes</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header" data-toggle="collapse" data-target="#counselingCollapse" aria-expanded="true" aria-controls="qualityPolicyCollapse">
+                    <div class="settings-header">Counseling</div>
+                </div>
+                <div id="counselingCollapse" class="collapse">
+                    <div class="card-body">
+                        <form id="counselingParagraphForm" action="update_setting.php" method="post">
+                            <div class="form-group">
+                                <textarea class="form-control" id="counseling_paragraph" name="setting_value" rows="5"><?php echo htmlspecialchars($counselingParagraph); ?></textarea>
+                                <input type="hidden" name="setting_key" value="counseling_paragraph">
+                            </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-outline-success">Save Changes</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header" data-toggle="collapse" data-target="#studentActCollapse" aria-expanded="true" aria-controls="qualityPolicyCollapse">
+                    <div class="settings-header">Student's Active Participation</div>
+                </div>
+                <div id="studentActCollapse" class="collapse">
+                    <div class="card-body">
+                        <form id="studentParticipationParagraphForm" action="update_setting.php" method="post">
+                            <div class="form-group">
+                                <textarea class="form-control" id="student_participation_paragraph" name="setting_value" rows="5"><?php echo htmlspecialchars($studentParticipationParagraph); ?></textarea>
+                                <input type="hidden" name="setting_key" value="student_participation_paragraph">
+                            </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-outline-success">Save Changes</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header" data-toggle="collapse" data-target="#highPassCollapse" aria-expanded="true" aria-controls="qualityPolicyCollapse">
+                    <div class="settings-header">High Passing Rate</div>
+                </div>
+                <div id="highPassCollapse" class="collapse">
+                    <div class="card-body">
+                        <form id="highPassingRateParagraphForm" action="update_setting.php" method="post">
+                            <div class="form-group">
+                                <textarea class="form-control" id="high_passing_rate_paragraph" name="setting_value" rows="5"><?php echo htmlspecialchars($highPassingRateParagraph); ?></textarea>
+                                <input type="hidden" name="setting_key" value="high_passing_rate_paragraph">
+                            </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-outline-success">Save Changes</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header" data-toggle="collapse" data-target="#gadServCollapse" aria-expanded="true" aria-controls="qualityPolicyCollapse">
+                    <div class="settings-header">Gender and Development Services</div>
+                </div>
+                <div id="gadServCollapse" class="collapse">
+                    <div class="card-body">
+                        <form id="genderDevelopmentParagraphForm" action="update_setting.php" method="post">
+                            <div class="form-group">
+                                <textarea class="form-control" id="gender_development_paragraph" name="setting_value" rows="5"><?php echo htmlspecialchars($genderDevelopmentParagraph); ?></textarea>
+                                <input type="hidden" name="setting_key" value="gender_development_paragraph">
+                            </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-outline-success">Save Changes</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header" data-toggle="collapse" data-target="#studentHealthCollapse" aria-expanded="true" aria-controls="qualityPolicyCollapse">
+                    <div class="settings-header">Student's Health Seminars</div>
+                </div>
+                <div id="studentHealthCollapse" class="collapse">
+                    <div class="card-body">
+                        <form id="healthSeminarsParagraphForm" action="update_setting.php" method="post">
+                            <div class="form-group">
+                                <textarea class="form-control" id="health_seminars_paragraph" name="setting_value" rows="5"><?php echo htmlspecialchars($healthSeminarsParagraph); ?></textarea>
+                                <input type="hidden" name="setting_key" value="health_seminars_paragraph">
+                            </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-outline-success">Save Changes</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

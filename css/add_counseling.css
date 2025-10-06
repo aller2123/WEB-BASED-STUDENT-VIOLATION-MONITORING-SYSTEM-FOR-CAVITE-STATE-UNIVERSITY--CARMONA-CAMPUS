@@ -1,0 +1,29 @@
+
+        body {
+            padding-top: 40px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        .form-check-label {
+            margin-top: 0.3rem;
+        }
+        .form-group select, .form-group input[type="text"],
+        .form-group input[type="number"] {
+            width: 100%;
+        }
+        .form-check {
+            margin-top: 0.3rem;
+        }
+        .btn-cancel {
+            margin-left: 0.5rem;
+        }
+        .header-title {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+ 

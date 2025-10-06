@@ -1,0 +1,157 @@
+/* Base styles */
+.container {
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 30px 50px;
+    margin-top: -60px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+select#student_id,
+.select2-container {
+    width: 100% !important;
+}
+
+.select2-container .select2-selection--single {
+    height: 38px !important;
+}
+
+.btn {
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.9rem;
+}
+
+.event-label,
+.program-label,
+.student-label {
+    margin-bottom: 5px;
+}
+
+.form-group {
+    margin-top: 30px;
+}
+
+body {
+    background-color: white;
+}
+
+h2,
+.event-label,
+.program-label,
+.student-label {
+    color: #444444;
+}
+
+.form-control {
+    background-color: #ffffff;
+    color: #1A4D2E;
+    border-color: #4F6F52;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #1bd889, #033a1a);
+    color: #d8f0c6;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #ee5050, #f157b1);
+    border: none !important;
+    border-radius: 5px;
+}
+
+.btn-secondary:not(:active) {
+    border: 1px solid #aa5082;
+}
+
+.btn-secondary:hover {
+    background-color: #74425d;
+    color: #d8f0c6;
+}
+
+.btn-primary:hover {
+    background-color: #43771c;
+    color: #d8f0c6;
+}
+
+.btn-primary:active {
+    background-color: #43771c !important;
+}
+
+.btn-secondary:active {
+    background-color: #74425d !important;
+}
+
+.btn-primary,
+.btn-secondary {
+    font-size: 16px;
+    padding: 0.375rem 0.75rem;
+    line-height: 2;
+    margin-top: 30px;
+}
+
+/* Mobile L (large phones and tablets, 769px to 992px) */
+@media (max-width: 992px) {
+    .container {
+        padding: 25px 40px;
+        margin-top: 0;
+        box-shadow: 15px 15px 45px #d9d9d9, -15px -15px 45px #ffffff;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        font-size: 15px;
+        padding: 0.3rem 0.6rem;
+    }
+}
+
+/* Mobile M (medium phones and small tablets, 577px to 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 30px;
+        margin-top: 0;
+        box-shadow: 10px 10px 30px #d9d9d9, -10px -10px 30px #ffffff;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        font-size: 14px;
+        padding: 0.25rem 0.5rem;
+    }
+}
+
+/* Mobile S (small phones, up to 576px) */
+@media (max-width: 576px) {
+    .container {
+        padding: 15px 20px;
+        margin-top: 0;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px #d9d9d9, -5px -5px 15px #ffffff;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        font-size: 12px;
+        padding: 0.2rem 0.4rem;
+    }
+}

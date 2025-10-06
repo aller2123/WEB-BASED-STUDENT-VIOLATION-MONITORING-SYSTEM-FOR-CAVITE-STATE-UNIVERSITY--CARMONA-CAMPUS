@@ -1,0 +1,300 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+}
+
+#wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+#sidebar {
+    background-color: #293846;
+    color: #d1d3d4;
+    width: 200px;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+#sidebar .logo {
+    padding: 10px;
+    text-align: center;
+    color: #d1d3d4;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #d1d3d4;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li.active a,
+nav ul li a:hover {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+#main-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 200px;
+    background-color: #ffffff;
+    min-height: 100vh;
+    box-shadow: 2px 0 5px 0 rgba(0,0,0,0.1);
+}
+
+#main-content header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+#main-content header input[type="search"] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+#main-content header .user {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+#students-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+#students-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.filters select {
+    padding: 5px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #dddddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f9f9f9;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #dddddd;
+    color: #333;
+    border-radius: 5px;
+}
+
+.pagination a.active, .pagination a:hover {
+    background-color: #1abc9c;
+    color: white;
+    border-color: #1abc9c;
+}
+
+/* Responsive styling adjustments */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 150px;
+    }
+
+    #main-content {
+        margin-left: 150px;
+    }
+    
+    /* Adjustments for mobile responsiveness */
+    /* Add additional media queries as necessary */
+}
+
+.modal {
+    display: none; /* Keep modal hidden by default */
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    
+}
+
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Adjust as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 4px; /* Optional: for rounded corners */
+    overflow: hidden; /* Optional: in case of overflow */
+}
+
+/* Add more styles for header, body, footer, etc., if needed */
+.modal-header,
+.modal-body,
+.modal-footer {
+    padding: 15px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header .close {
+    font-size: 1.5rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding-top: 0;
+}
+
+.modal-footer {
+    border-top: 1px solid #e5e5e5;
+    text-align: right;
+}
+
+/* Form and input styles */
+.modal-body form {
+    margin: 0; /* Removes margin */
+    padding: 0; /* Removes padding */
+}
+
+.modal-body form label {
+    display: block; /* Ensures label takes up the full width */
+    margin-bottom: .5rem; /* Space below the label */
+    color: #495057; /* Color similar to Bootstrap's default label color */
+    font-size: 1rem; /* Sets a standard font size for labels */
+}
+
+.modal-body form input[type="text"],
+.modal-body form select {
+    display: block; /* Ensures inputs take up the full width */
+    width: 100%; /* Uses full width of the modal body */
+    padding: .375rem .75rem; /* Similar to Bootstrap's form input padding */
+    font-size: 1rem; /* Sets a standard font size for inputs */
+    font-weight: 400; /* Sets the font weight to normal */
+    line-height: 1.5; /* Defines the line height */
+    color: #495057; /* Text color for inputs */
+    background-color: #fff; /* Background color for inputs */
+    background-clip: padding-box; /* Ensures background extends to the border */
+    border: 1px solid #ced4da; /* Border color similar to Bootstrap's default */
+    border-radius: .25rem; /* Slightly rounded borders for inputs */
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; /* Smooth transition for focus effects */
+}
+
+.modal-body form input[type="text"]:focus,
+.modal-body form select:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff; /* Highlights the border when input is focused */
+    outline: 0; /* Removes the default outline */
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); /* Bootstrap's 'glow' effect */
+}
+
+.modal-body form .form-group {
+    margin-bottom: 1rem; /* Space below each form group */
+}
+
+.modal-body form .form-control {
+    /* If you are using Bootstrap classes */
+    /* Additional styles if needed */
+}
+
+/* If you have a submit button within the form */
+.modal-body form button[type="submit"] {
+    width: auto; /* Allows the button to size according to its content */
+    margin-top: 1rem; /* Space above the button */
+}
+
+
+.modal-body form input[type="text"],
+.modal-body form select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Button styles */
+.modal-footer button {
+    /* Your button styles */
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+.modal-footer .btn-cancel {
+    background-color: #6c757d; /* Bootstrap 'secondary' color */
+    color: white;
+}
+
+.modal-footer .btn-save {
+    background-color: #007bff; /* Bootstrap 'primary' color */
+    color: white;
+}
+
+/* Add other styles as needed */
+/* CSS transition for search form */
+#search-form {
+    transition: all 0.3s ease-in-out;
+}
+
+#search-form.d-none {
+    opacity: 0;
+    transform: translateY(-20px);
+}

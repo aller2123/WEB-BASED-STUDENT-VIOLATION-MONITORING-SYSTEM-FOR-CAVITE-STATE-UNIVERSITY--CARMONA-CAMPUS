@@ -1,0 +1,159 @@
+.hidden {
+    display: none;
+}
+body {
+    background-image: url('../img/carmona2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    }
+.container {
+    height: 100vh;
+}
+.login-card {
+    background-color: #ffffff; 
+    padding: 22px 20px; /* Increased top padding to accommodate the border */
+    border: 1px solid #73cc911f; /* Match the login card's border */
+    border-radius: 10px; /* Add border radius */
+    margin-top: 160px; /* Adjusted top margin */
+    max-width: 400px; /* Set maximum width */
+    width: 100%; /* Ensure responsiveness */
+    backdrop-filter: blur(1.6px); /* Apply a blur effect */
+    box-shadow: 0 8px 32px 0 rgba(10, 82, 26, 0.596); /* Adjust alpha value for darker shadow */  
+}
+.card-title,
+.form-group {
+    color: #1d1d1d;
+}
+.form-control {
+    color: #1A4D2E; /* Change input text color to white */
+    border-color: #4F6F52 /* Change input border color to red */
+    
+}
+.btn-success {
+    background-color: transparent;
+    color: #1d1d1d;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    border-color: #452235; /* Set the border color to #452235 */
+}
+.btn-primary {
+    background-color: #4f8f1e;
+    color: #d8f0c6;
+    border-radius: 20px;
+    margin-top: -10px;
+}
+.btn-success:hover {
+    background-color: #74425d; /* Change background color on hover */
+    color: #d8f0c6;
+    text-transform: uppercase;
+}
+.btn-success:not(:active) {
+    border: 2px solid #aa5082; /* Add a 2px solid border when not active */
+}
+.btn-primary:hover{
+    background-color: #43771c;
+    color: #d8f0c6;
+}
+.btn-primary,
+.btn {
+    border: none; /* Remove default border */  
+}
+.btn-primary:active {
+    background-color: #43771c !important; /* Change the background color to red when the button is active */
+}
+.btn-success:active {
+    background-color: #74425d !important; /* Change the background color to red when the button is active */
+}
+.form-control:focus {
+    border-color: #452222; /* Change border color when input is focused */
+}
+.forgot-password-link{
+    position: relative;
+    top: -15px;
+    font-size: 14px;
+    /* color: #61f570; */
+}
+/* .forgot-password-link:hover{
+    color: #43e253;
+} */
+.username-label {
+    margin-top: 10px; /* Adjust the top margin to move the label down */
+    margin-left: 6px; 
+}
+.password-label {
+    margin-top: 10px; /* Adjust the top margin to move the label down */
+    margin-left: 6px;
+}
+h3{
+    margin-top: -5px;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.form-control {
+    font-size: inherit;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+}
+.form-control:focus {
+    outline: none;
+    border-bottom: 1px solid #8f1e1e; /* Change color on focus */
+}
+.username-label,
+.password-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:#535353;
+    pointer-events: none; /* Ensure label does not interfere with input */
+    transition: all 0.3s ease;
+}
+/* Hide the label when input is focused */
+.form-group .form-control:focus + label,
+.form-group .form-control:not(:placeholder-shown) + label {
+    display: none;
+}
+.form-control:focus + .username-label,
+.form-control:focus + .password-label,
+.form-control:not(:placeholder-shown) + .username-label,
+.form-control:not(:placeholder-shown) + .password-label {
+    top: -1.5rem; /* Move label up when input is focused or has value */
+    font-size: 1rem;
+    color: #4f8f1e; /* Change color on focus */
+}
+.label-hidden {
+    display: none; /* Hide the label */
+}
+/* Remove default input field styles */
+.form-control {
+    color: #4e4e4e; /* Set the color of the input text to white */
+    background-color: transparent; /* Set the background color to transparent */
+    border: none; /* Remove the border */
+    border-bottom: 1px solid #4e4e4e; /* Add a bottom border */
+    transition: border-color 0.3s; /* Add transition for smooth effect */
+    border-radius: 0px;
+}
+.form-control::placeholder {
+    color: #ccc; /* Set the color of the placeholder text */
+}
+/* Change the background color, border color, and text color when input is focused */
+.form-control:focus {
+    background-color: transparent !important; /* Set the background color to transparent when focused */
+    border-color: transparent !important; /* Remove the border color on focus */
+    color: #1d1d1d !important; /* Set the text color to white when focused */
+    box-shadow: none !important; /* Remove any box shadow */
+    outline: none !important; /* Remove the blue outline */
+    border-bottom: 1px solid #4e4e4e !important; /* Add underline when focused */
+    border-radius: 0px;
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: transparent !important;
+}
